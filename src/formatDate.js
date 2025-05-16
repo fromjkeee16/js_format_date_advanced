@@ -11,8 +11,8 @@ function formatDate(date, fromFormat, toFormat) {
   const fFormat = [...fromFormat];
   const tFormat = [...toFormat];
 
-  const oldSeparator = fFormat.splice(3, 1);
-  const newSeparator = tFormat.splice(3, 1);
+  const oldSeparator = fFormat.splice(3, 1)[0];
+  const newSeparator = tFormat.splice(3, 1)[0];
 
   const data = {};
 
